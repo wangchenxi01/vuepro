@@ -6,7 +6,7 @@
     <button style="margin-left: 10px;" @click="save">save</button>
     <button style="margin-left: 10px;" @click="showHistory">showHistory</button>
     <ul>
-      <li style="width:100%" v-for="(item,index) in messageArr" :key="index">
+      <li style="width:100%;color:pink" v-for="(item,index) in messageArr" :key="index">
         内容：{{item.message}}
       </li>
     </ul>
