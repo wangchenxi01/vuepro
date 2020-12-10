@@ -29,17 +29,13 @@ export default {
   created:function(){
       this.message=''
       this.words = ['你还没输入呢','are u kidding me?','入力してください','i dont know u mean','-_-||']
+      this.messageArr = []
+        this.localdataArr = []
   },
   methods:{
     onsubmit(){
       var m = parseInt(Math.random()*5,10); 
-      if(!this.messageArr)
-      {
-        alert(this.words[m]);
-        this.messageArr = []
-        this.localdataArr = []
-      }
-      else if(this.message.length == 0){
+      if(this.message.length == 0){
          alert(this.words[m]);
       }else{
         this.messageArr.push({message: this.message})
